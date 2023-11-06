@@ -26,6 +26,7 @@ public class Practica9Unidad2 {
 			break;
 		default:
 			System.out.println("Unidad desconocida.");
+			System.out.println("Unidad desconocida.");
 		}
 	}
 }
