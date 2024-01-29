@@ -14,11 +14,11 @@ public class Practica7Unidad2Bucles {
 
 		// Convertir todos los caracteres en minusculas y obtener el tamaño de la cadena
 		frase = frase.toLowerCase();
-		int len = frase.length();
+		int longitud = frase.length();
 		boolean esIsograma = true;
 
 		// Bucle para contar los caracteres de la cadena: i menor a (tamaño de cadena)
-		for (int i = 0; i < len; i++) {
+		for (int i = 0; i < longitud; i++) {
 			// Obtiene el caracter de la cadena
 			char c = frase.charAt(i);
 			// Comprueba que no sean iguales y rompe el bucle
