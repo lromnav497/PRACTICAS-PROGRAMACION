@@ -1,5 +1,5 @@
 package unidad3;
-
+.
 import java.util.Random;
 
 public class Cuerpo {
