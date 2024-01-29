@@ -29,6 +29,10 @@ public class Organo {
 	public static final int BASICA = 1;
 	public static final int SECUNDARIA = 2;
 
+	public static final int ONCOLÓGICO = 0;
+	public static final int ESTADO = 1;
+	public static final int RUTINARIO = 2;
+
 	public Organo() {
 		Random aleatorio = new Random();
 		String[] nombreorganos = { "cerebro", "corazón", "riñones", "pulmones", "oído", "estómago" };
@@ -66,8 +70,56 @@ public class Organo {
 		return this.peso;
 	}
 
+	public String getFuncion() {
+		return this.funcion;
+	}
+
+	public int getposicion() {
+		return this.posicion;
+	}
+
+	public int getImportancia() {
+		return this.importancia;
+	}
+
+	public String getImagen() {
+		return this.imagen;
+	}
+
+	public boolean getActivo() {
+		return this.activo;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
 	public void setEstado(int estado) {
 		this.estado = estado;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+	public void setFuncion(String funcion) {
+		this.funcion = funcion;
+	}
+
+	public void setPosicion(int posicion) {
+		this.posicion = posicion;
+	}
+
+	public void setImportancia(int importancia) {
+		this.importancia = importancia;
+	}
+
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
+
+	public void setActivo(boolean activo) {
+		this.activo = activo;
 	}
 
 	public boolean revision() {
@@ -93,19 +145,18 @@ public class Organo {
 		}
 	}
 
-	public boolean analisis() {
-		switch (estado) {
-		case 1:
-			// Comprueba si el estado es cancerígeno
+	public boolean analisis(int tipoAnalisis) {
+		switch (tipoAnalisis) {
+		case ONCOLÓGICO:
+			// Comprueba si es cancerígeno
 			return this.estado == CANCERIGENO;
-		case 2:
-			// Comprueba si el órgano está perjudicado
+		case ESTADO:
+			// Comprueba si está perjudicado
 			return this.estado == PERJUDICADO;
-		case 3:
+		case RUTINARIO:
 			// Comprueba si el peso está por encima de 200g y menos de 1kg
 			return this.peso >= 200 && this.peso <= 1000;
 		default:
-			// Tipo de análisis no reconocido
 			return false;
 		}
 	}
