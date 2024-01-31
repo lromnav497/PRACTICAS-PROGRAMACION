@@ -33,6 +33,7 @@ public class Organo {
 	public static final int ESTADO = 1;
 	public static final int RUTINARIO = 2;
 
+	// Creacion de Constructures
 	public Organo() {
 		Random aleatorio = new Random();
 		String[] nombreorganos = { "cerebro", "corazón", "riñones", "pulmones", "oído", "estómago" };
