@@ -10,6 +10,7 @@ public class Raza {
 	private String piel;
 	private String zona;
 
+	// Creando el constructor de raza
 	public Raza() {
 		Random aleatorio = new Random();
 		String[] nombres = { "Pepe", "Juan", "Luisa", "María", "Carla", "Carlos" };
@@ -25,6 +26,7 @@ public class Raza {
 		this.zona = zona[aleatorio.nextInt(zona.length)];
 	}
 
+	// Poner los valores de raza
 	public Raza(String nombre, String descripcion, double altura, String pelo, String piel, String zona) {
 		this.nombre = nombre;
 		this.descripcion = descripcion;

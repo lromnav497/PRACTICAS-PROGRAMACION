@@ -21,6 +21,7 @@ public class Cuerpo {
 	public static final int CANCER = 4;
 	public static final int PARKINSON = 5;
 
+	// Contructor cuerpo
 	public Cuerpo() {
 		Random rand = new Random();
 		this.edad = rand.nextInt(100); // Edad aleatoria entre 0 y 99
@@ -31,6 +32,7 @@ public class Cuerpo {
 		}
 	}
 
+	// Poniendo variables en el constructor
 	public Cuerpo(String nombre, int edad, double peso, String raza, int estado, Organo[] organos) {
 		this.nombre = nombre;
 		this.edad = edad;
