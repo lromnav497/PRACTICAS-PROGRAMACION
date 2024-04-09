@@ -1,4 +1,4 @@
-package unidad4;
+package unidad4.model;
 
 public class ClienteDO {
 

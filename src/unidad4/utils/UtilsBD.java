@@ -1,4 +1,4 @@
-package unidad4;
+package unidad4.utils;
 
 //Con un import podemos utilizar todas las clases
 //Del paquete indicado
@@ -16,7 +16,7 @@ public class UtilsBD {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 
 			// Creamos una conexion activa con BD
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/tienda", "root", "");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/tienda", "root", "toor");
 
 			// Si no ha saltado la excepcion devolvemos
 			// la conexion
